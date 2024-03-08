@@ -95,8 +95,11 @@ namespace Arithmetic_Quiz
             // Continue asking questions if the user enters "y"
             while (value.ToLower() == "y");
 
+            int percentage = (totalScore * 100) / totalQuestions;
+
             // Display the user's score
             Console.WriteLine("\n----------------------------------------");
+            Console.WriteLine($" Your score is {percentage}%");
             Console.WriteLine($" You got {totalScore} out of {totalQuestions} questions correct.");
             Console.WriteLine("----------------------------------------");
 
